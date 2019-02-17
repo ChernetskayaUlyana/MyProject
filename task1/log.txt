@@ -1,0 +1,12 @@
+$ git log
+commit 745814ba9dc3c1db6d5bc2d0dd8ade263a92dcdb (HEAD -> master)
+Author: ChernetskayaUlyana <16ulyana99@gmail.com>
+Date:   Sun Feb 17 20:54:46 2019 +0300
+
+    status.txt
+
+commit 74aa1086e297fdb073806cf664d53907f5bf233a
+Author: ChernetskayaUlyana <16ulyana99@gmail.com>
+Date:   Sun Feb 17 20:53:36 2019 +0300
+
+    .gitignore
