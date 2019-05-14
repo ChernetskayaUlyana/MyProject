@@ -341,7 +341,7 @@ function addPhotoPost(photoPost){
 }
 
 function compereDate(a,b){
-     return a.createdAt - b.createdAt;
+     return b.createdAt - a.createdAt;
 }
 
 function getPhotoPosts(skip, top, filterConfig){
@@ -365,7 +365,7 @@ function getPhotoPosts(skip, top, filterConfig){
      if(isExists(filterConfig.Date1)){
           if(!checkDate(filterConfig.Date1)) return false;
           for(var i = 0; i < posts.length; i++){
-               if(posts[i].createdAt > filterConfig.Date1) {post.push(posts[i]);}
+               if(posts[i].createdAt - filterConfig.Date1 >= 0) {post.push(posts[i]);}
           }
           posts = post;
           post = [];
@@ -373,7 +373,7 @@ function getPhotoPosts(skip, top, filterConfig){
      if(isExists(filterConfig.Date2)){
           if(!checkDate(filterConfig.Date2)) return false;
           for(var i = 0; i < posts.length; i++){
-               if(posts[i].createdAt < filterConfig.Date2) {post.push(posts[i]);}
+               if(posts[i].createdAt - filterConfig.Date2 <= 0) {post.push(posts[i]);}
           }
           posts = post;
           post = [];
@@ -381,10 +381,11 @@ function getPhotoPosts(skip, top, filterConfig){
      if(isExists(filterConfig.hashTags)){
           if(!checkArray(filterConfig.hashTags)) {return false;}
           for(var i = 0; i < filterConfig.hashTags.length; i++){
-               var flag = false;
+               console.log(posts.length);
                for(var j = 0; j < posts.length; j++){
+                    var flag = false;
                     var k = 0;
-                    while(k < posts.hashTags.length && !flag){
+                    while((k < posts[j].hashTags.length) && !flag){
                          if(posts[j].hashTags[k] == filterConfig.hashTags[i]){flag = true;}
                          k++;
                     }
