@@ -1,54 +1,57 @@
 //task 4
 
+var userName = 'UlyanaChernetskaya';
+id = 22;
+
 var photoPosts = [
    {
         id: '1',
-        descriprion: ' ',
+        description: ' ',
         createdAt: new Date('2018-02-23T23:00:00'),
         author: 'NinaVolk',
         photoLink: ' ',
         hashTags: ['#1','#3'],
-        likes: []
+        likes: ['UlyanaChernetskaya']
    },
    {
         id: '2',
-        descriprion: ' ',
+        description: ' ',
         createdAt: new Date('2018-02-23T23:10:02'),
         author: 'UlyanaChernetskaya',
         photoLink: ' ',
         hashTags: ['#2','#5'],
-        likes: ['NinaVolk']
+        likes: ['NinaVolk', 'MiraObolenskaya']
    },
    {
         id: '3',
-        descriprion: ' ',
+        description: ' ',
         createdAt: new Date('2018-03-02T20:04:04'),
         author: 'MiraObolenskaya',
         photoLink: ' ',
         hashTags: ['#3','#4'],
-        likes: []
+        likes: ['UlyanaChernetskaya']
    },
    {
         id: '4',
-        descriprion: ' ',
+        description: ' ',
         createdAt: new Date('2019-05-20T23:05:30'),
         author: 'NinaVolk',
         photoLink: ' ',
         hashTags: ['#2','#4'],
-        likes: []
+        likes: ['MiraObolenskaya', 'UlyanaChernetskaya']
    },
    {
         id: '5',
-        descriprion: ' ',
+        description: ' ',
         createdAt: new Date('2017-12-31T13:32:47'),
         author: 'UlyanaChernetskaya',
         photoLink: ' ',
         hashTags: ['#1'],
-        likes: []
+        likes: ['MiraObolenskaya']
    },
    {
         id: '6',
-        descriprion: ' ',
+        description: ' ',
         createdAt: new Date('2018-02-23T23:00:01'),
         author: 'MiraObolenskaya',
         photoLink: ' ',
@@ -57,34 +60,34 @@ var photoPosts = [
    },
    {
         id: '7',
-        descriprion: ' ',
+        description: ' ',
         createdAt: new Date('2018-02-23T23:00:03'),
         author: 'UlyanaChernetskaya',
         photoLink: ' ',
         hashTags: ['#3'],
-        likes: []
+        likes: ['MiraObolenskaya']
    },
    {
         id: '8',
-        descriprion: ' ',
+        description: ' ',
         createdAt: new Date('2018-02-28T23:00:00'),
         author: 'NinaVolk',
         photoLink: ' ',
         hashTags: ['#4'],
-        likes: []
+        likes: ['MiraObolenskaya', 'UlyanaChernetskaya']
    },
    {
         id: '9',
-        descriprion: ' ',
+        description: ' ',
         createdAt: new Date('2018-07-23T23:00:00'),
         author: 'NinaVolk',
         photoLink: ' ',
         hashTags: ['#5'],
-        likes: []
+        likes: ['UlyanaChernetskaya']
    },
    {
         id: '10',
-        descriprion: ' ',
+        description: ' ',
         createdAt: new Date('2018-02-23T23:01:00'),
         author: 'UlyanaChernetskaya',
         photoLink: ' ',
@@ -93,52 +96,52 @@ var photoPosts = [
    },
    {
         id: '11',
-        descriprion: ' ',
+        description: ' ',
         createdAt: new Date('2018-02-13T23:00:00'),
         author: 'NinaVolk',
         photoLink: ' ',
         hashTags: ['#1','#3'],
-        likes: []
+        likes: ['UlyanaChernetskaya']
    },
    {
         id: '12',
-        descriprion: ' ',
+        description: ' ',
         createdAt: new Date('2018-02-03T23:00:00'),
         author: 'UlyanaChernetskaya',
         photoLink: ' ',
         hashTags: ['#2','#5'],
-        likes: []
+        likes: ['MiraObolenskaya']
    },
    {
         id: '13',
-        descriprion: ' ',
+        description: ' ',
         createdAt: new Date('2018-02-23T23:00:32'),
         author: 'UlyanaChernetskaya',
         photoLink: ' ',
         hashTags: ['#2','#3','#4'],
-        likes: []
+        likes: ['MiraObolenskaya']
    },
    {
         id: '14',
-        descriprion: ' ',
+        description: ' ',
         createdAt: new Date('2018-02-23T23:18:00'),
         author: 'NinaVolk',
         photoLink: ' ',
         hashTags: ['#1','#3','#5'],
-        likes: []
+        likes: ['UlyanaChernetskaya']
    },
    {
         id: '15',
-        descriprion: ' ',
+        description: ' ',
         createdAt: new Date('2018-02-23T09:00:00'),
         author: 'MiraObolenskaya',
         photoLink: ' ',
         hashTags: ['#2','#3','#5'],
-        likes: ['NinaVolk']
+        likes: ['NinaVolk', 'UlyanaChernetskaya']
    },
    {
         id: '16',
-        descriprion: ' ',
+        description: ' ',
         createdAt: new Date('2018-02-23T23:59:00'),
         author: 'UlyanaChernetskaya',
         photoLink: ' ',
@@ -147,57 +150,57 @@ var photoPosts = [
    },
    {
         id: '17',
-        descriprion: ' ',
+        description: ' ',
         createdAt: new Date('2018-02-23T23:00:05'),
         author: 'NinaVolk',
         photoLink: ' ',
         hashTags: ['#1','#2','#3'],
-        likes: []
+        likes: ['MiraObolenskaya']
    },
    {
         id: '18',
-        descriprion: ' ',
+        description: ' ',
         createdAt: new Date('2018-09-23T23:00:00'),
         author: 'UlyanaChernetskaya',
         photoLink: ' ',
         hashTags: ['#1','#3','#4'],
-        likes: []
+        likes: ['MiraObolenskaya']
    },
    {
         id: '19',
-        descriprion: ' ',
+        description: ' ',
         createdAt: new Date('2016-02-23T23:00:00'),
         author: 'MiraObolenskaya',
         photoLink: ' ',
         hashTags: ['#3'],
-        likes: []
+        likes: ['UlyanaChernetskaya']
    },
    {
         id: '20',
-        descriprion: ' ',
+        description: ' ',
         createdAt: new Date('2018-12-23T23:00:00'),
         author: 'NinaVolk',
         photoLink: ' ',
         hashTags: ['#1'],
-        likes: []
+        likes: ['MiraObolenskaya', 'UlyanaChernetskaya']
    },
    {
         id: '21',
-        descriprion: ' ',
+        description: ' ',
         createdAt: new Date('2018-10-23T23:00:00'),
         author: 'MiraObolenskaya',
         photoLink: ' ',
         hashTags: ['#1','#2','#5'],
-        likes: ['NinaVolk']
+        likes: ['NinaVolk', 'UlyanaChernetskaya']
    },
    {
         id: '22',
-        descriprion: ' ',
+        description: ' ',
         createdAt: new Date('2018-11-23T23:00:00'),
         author: 'UlyanaChernetskaya',
         photoLink: ' ',
         hashTags: ['#1','#2','#3'],
-        likes: ['NinaVolk']
+        likes: ['NinaVolk', 'MiraObolenskaya']
    }
 ];
 
@@ -231,12 +234,12 @@ function removePhotoPost(id){
 }
 
 function validatePhotoPost(photoPost){
-     if(isExists(photoPost.id) && isExists(photoPost.descriprion) && 
+     if(isExists(photoPost.id) && isExists(photoPost.description) && 
         isExists(photoPost.createdAt) && isExists(photoPost.author) &&
         isExists(photoPost.photoLink) && isExists(photoPost.likes) &&
         isExists(photoPost.hashTags)){
              if(checkId(photoPost.id) && checkDate(photoPost.createdAt) &&
-                checkDescriprion(photoPost.descriprion) && 
+                checkDescriprion(photoPost.description) && 
                 checkString(photoPost.author) && checkString(photoPost.photoLink) &&
                 checkHashTags(photoPost.hashTags) && checkArray(photoPost.likes)){
                   return true;
@@ -253,9 +256,9 @@ function editPhotoPost(id, photoPost){
                else {i++;}
           }
           if(i == photoPosts.length) {return false;}
-          if(isExists(photoPost.descriprion)) {
-               if(checkDescriprion(photoPost.descriprion)){
-                    photoPosts[i].descriprion = photoPost.descriprion;
+          if(isExists(photoPost.description)) {
+               if(checkDescriprion(photoPost.description)){
+                    photoPosts[i].description = photoPost.description;
                }
                else {return false;}
           }
@@ -278,6 +281,11 @@ function editPhotoPost(id, photoPost){
 }
 
 function addPhotoPost(photoPost){
+     id++;
+     photoPost.id = id;
+     photoPost.createdAt = new Date();
+     photoPost.author = userName;
+     photoPost.likes = [];
      if(validatePhotoPost(photoPost)){
           if(getPhotoPost(photoPost.id)) {
                if(editPhotoPost(photoPost.id, photoPost)){
@@ -373,9 +381,9 @@ function checkId(id){
      return false;
 }
 
-function checkDescriprion(descriprion){
-     if (typeof(descriprion) === 'string'){
-          if(descriprion.length <= 200 && descriprion.length > 0){
+function checkDescriprion(description){
+     if (typeof(description) === 'string'){
+          if(description.length <= 200 && description.length > 0){
                return true;
           }
      }
@@ -434,7 +442,7 @@ function compereDate(a,b){
 class PostCollection{
 
      constructor(postsArray){
-          this.thisPhotoPost = new Array();
+          this.thisPhotoPost = [];
           postsArray.forEach(element => {
                if(PostCollection.validate(element)){
                     this.thisPhotoPost.push(element);
@@ -444,12 +452,12 @@ class PostCollection{
      }
 
      static validate(photoPost){
-          if(isExists(photoPost.id) && isExists(photoPost.descriprion) && 
+          if(isExists(photoPost.id) && isExists(photoPost.description) && 
                   isExists(photoPost.createdAt) && isExists(photoPost.author) &&
                   isExists(photoPost.photoLink) && isExists(photoPost.likes) &&
                   isExists(photoPost.hashTags)){
                        if(checkId(photoPost.id) && checkDate(photoPost.createdAt) &&
-                          checkDescriprion(photoPost.descriprion) && 
+                          checkDescriprion(photoPost.description) && 
                           checkString(photoPost.author) && checkString(photoPost.photoLink) &&
                           checkHashTags(photoPost.hashTags) && checkArray(photoPost.likes)){
                             return true;
@@ -542,6 +550,11 @@ class PostCollection{
      }
 
      add(photoPost){
+          id++;
+          photoPost.id = id;
+          photoPost.createdAt = new Date();
+          photoPost.author = userName;
+          photoPost.likes = [];
           if(PostCollection.validate(photoPost)){
                if(this.get(photoPost.id)) {
                     if(this.edit(photoPost.id, photoPost)){
@@ -551,6 +564,7 @@ class PostCollection{
                }
                else {
                     this.thisPhotoPost.push(photoPost);
+                    console.log(photoPost);
                     console.log(this.thisPhotoPost.sort(compereDate));
                     return true;
                }
@@ -567,9 +581,9 @@ class PostCollection{
                     else {i++;}
                }
                if(i == this.thisPhotoPost.length) {return false;}
-               if(isExists(photoPost.descriprion)) {
-                    if(checkDescriprion(photoPost.descriprion)){
-                         this.thisPhotoPost[i].descriprion = photoPost.descriprion;
+               if(isExists(photoPost.description)) {
+                    if(checkDescriprion(photoPost.description)){
+                         this.thisPhotoPost[i].description = photoPost.description;
                     }
                     else {return false;}
                }
