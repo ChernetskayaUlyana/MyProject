@@ -1,0 +1,2 @@
+SELECT userName
+FROM user;
